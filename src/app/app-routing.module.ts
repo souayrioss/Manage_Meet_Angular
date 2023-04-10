@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import {LoginComponent} from "./authentication/login/login.component";
 import {RouterModule, Routes} from "@angular/router";
 import {IndexComponent} from "./front_office/index/index.component";
+import {NewMeetComponent} from "./back_office/new-meet/new-meet.component";
+import {MeetsComponent} from "./back_office/meets/meets.component";
 const routes: Routes = [
   //  {path:'', redirectTo:'', pathMatch:'full' },
   {
@@ -12,6 +14,14 @@ const routes: Routes = [
   {
     path: '',
     component: IndexComponent
+  },
+  {
+    path: 'newMeet',
+    component: NewMeetComponent
+  },
+  {
+    path: 'meets',
+    component: MeetsComponent
   },
   /*{
     path: 'register',
