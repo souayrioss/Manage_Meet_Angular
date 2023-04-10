@@ -56,7 +56,7 @@ export class LoginComponent implements OnInit {
             localStorage.setItem("role", role);
             localStorage.setItem("token", token);
             localStorage.setItem("email", decodedJWT.email);
-            localStorage.setItem("name", decodedJWT.fullName);
+            localStorage.setItem("name", decodedJWT["full Name"]);
             localStorage.setItem("uuid", decodedJWT.uuid);
           }
 
